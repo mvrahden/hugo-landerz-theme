@@ -1,0 +1,16 @@
+name = "Landerz"
+license = "MIT"
+licenselink = "https://github.com/mvrahden/hugo-landerz-theme/blob/master/LICENSE.md"
+description = "Landerz is your go-to solution when in search of the best free business landing page website template. This responsive Bootstrap Framework tool rocks the online world with a contemporary, clean and light web design that will spark their curiosity. If you would like to stand out a mile, you can do it now with a website that you will base around the spectacular Landerz."
+homepage = "https://github.com/mvrahden/hugo-landerz-theme"
+tags = ["blog","pages","landerz"]
+features = ["google analytics"]
+min_version=0.31
+
+[author]
+  name = "Menno van Rahden"
+  homepage = "https://www.openclusters.org/"
+
+[original]
+  name = "Colorlib"
+  homepage = "https://colorlib.com/wp/template/landerz/"

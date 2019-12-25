@@ -1,0 +1,29 @@
+<script type="text/javascript" src="{{ "js/jquery.fitvids.js" | absURL}}"></script>
+
+<script type="text/javascript" src="{{ "js/jquery-3.3.1.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery-migrate-3.0.1.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery-ui.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/popper.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/bootstrap.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/owl.carousel.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery.stellar.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery.countdown.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/bootstrap-datepicker.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery.easing.1.3.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery.fancybox.min.js" | absURL}}"></script>
+<script type="text/javascript" src="{{ "js/jquery.sticky.js" | absURL}}"></script>
+
+<script src="{{ "js/main.js" | absURL}}"></script>
+<script>
+  $('#scroll-event-button').on('click', function (e) {
+    $('html, body').animate({
+      scrollTop: $(window).height() * 1.2
+    }, 1000);
+  })
+</script>
+{{ with .Site.Params.mailChimp}}
+<script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us20.list-manage.com", "uuid": "{{ .uuid }}", "lid": "{{ .lid }}", "uniqueMethods": true }) })</script>
+{{end}}
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

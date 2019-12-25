@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="163 82 153 30" width="153pt" height="30pt" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata> Produced by OmniGraffle 7.2.2 
+    <dc:date>2019-12-21 21:11:59 +0000</dc:date>
+  </metadata>
+  <defs>
+    <font-face font-family="Montserrat" font-size="21" panose-1="0 0 6 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="530" cap-height="700" ascent="968.0023" descent="-251.00708" font-weight="600">
+      <font-face-src>
+        <font-face-name name="Montserrat-Medium"/>
+      </font-face-src>
+    </font-face>
+    <font-face font-family="Montserrat" font-size="21" panose-1="0 0 5 0 0 0 0 0 0 0" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="525" cap-height="700" ascent="968.0023" descent="-251.00708" font-weight="500">
+      <font-face-src>
+        <font-face-name name="Montserrat-Regular"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <g stroke="none" stroke-opacity="1" stroke-dasharray="none" fill="none" fill-opacity="1">
+    <title>Canvas 1</title>
+    <rect fill="white" width="525" height="618"/>
+    <g>
+      <title>Layer 1</title>
+      <text transform="translate(163.21504 84.23729)" fill="#00d3b5">
+        <tspan font-family="Montserrat" font-size="21" font-weight="600" fill="#00d3b5" x=".1185" y="20" textLength="14.763">#</tspan>
+      </text>
+      <text transform="translate(179.0625 83.38983)" fill="black">
+        <tspan font-family="Montserrat" font-size="21" font-weight="500" x="0" y="20" textLength="54.306">open</tspan>
+        <tspan font-family="Montserrat" font-size="21" font-weight="500" x="54.348" y="20" textLength="11.823">c</tspan>
+        <tspan font-family="Montserrat" font-size="21" font-weight="500" x="66.003" y="20" textLength="38.577">lust</tspan>
+        <tspan font-family="Montserrat" font-size="21" font-weight="500" x="104.181" y="20" textLength="21.105">er</tspan>
+        <tspan font-family="Montserrat" font-size="21" font-weight="500" x="125.202" y="20" textLength="10.269">s</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

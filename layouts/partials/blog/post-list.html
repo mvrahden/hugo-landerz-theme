@@ -1,0 +1,62 @@
+{{ $section := .Section }}
+{{ $paginator := .Paginate (where .Pages.ByDate.Reverse "Section" $section) }}
+<article class="container">
+<div class="row">
+  <header class="h-entry col-12 text-center">
+    <h1 class="section-title mb-3" id="overview-section">{{.Page.Title}}</h1>
+  </header>
+  <section class="text-gray col-12 text-center mb-4">
+  {{ if .Page.Description }}
+    <div class="col-8 offset-2 mb-4">
+    {{ .Description | markdownify }}
+    </div>
+  {{ end }}
+  {{ if .Page.Content }}
+    <div class="col-8 offset-2 mb-4">
+    {{ .Content | markdownify }}
+    </div>
+  {{ end }}
+  </section>
+</div>
+</article>
+{{ range $paginator.Pages }}
+<article class="container mb-4">
+  <a href="{{ .Permalink }}">
+  <header class="h-entry col-8 offset-2">
+    <h2 class="text-gray" id="desktop-cluster">{{ .Params.Title }}</h2>
+    <div class="meta mb-3">
+      {{ with .Params.author }}
+      <i class="icon-person"></i> @{{ . }}
+      {{ end }}
+      <span class="mx-2">&bullet;</span>
+      {{ with .Params.date }}
+      <i class="icon-calendar"></i> {{ dateFormat "Jan 2, 2006" . }}
+      {{ end }}
+      <span class="mx-2">&bullet;</span>
+      {{ with .Params.categories }}
+      {{ delimit . ", " }}
+      {{ end }}
+    </div>
+  </header>
+  <section class="text-gray col-8 offset-2">
+      {{ if .Description }}
+      <p>
+        {{ .Description | markdownify }}
+      </p>
+      {{ else }}
+      {{ if .Page.Content }}
+      <p>
+        {{ .Summary | plainify | safeHTML | truncate 200 }}
+      </p>
+      {{ end }}
+      {{ end }}
+    {{ with .Params.image }}
+    <figure class="container figure text-center">
+      <img class="img-fluid rounded shadow" src="{{ . | absURL }}" alt="content image" style="max-height: 300px;">
+    </figure>
+    {{ end }}
+  </section>
+  </a>
+</article>
+{{ end }}
+

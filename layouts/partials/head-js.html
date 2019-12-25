@@ -1,0 +1,12 @@
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+<script src="{{ "js/custom.template-content-loading.min.js" | absURL }}"></script>
+
+{{ with .Site.Params.mailChimp }}
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"  data-dojo-config="usePlainJson: true, isDebug: false"></script>
+{{ end }}

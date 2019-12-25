@@ -1,0 +1,58 @@
+{{ $postsPerPage := 3 }}
+{{ $builds := (where .Site.Pages.ByDate.Reverse "Type" "building-plan")}}
+{{ $software := (where .Site.Pages.ByDate.Reverse "Type" "software")}}
+{{ $blog := (where .Site.Pages.ByDate.Reverse "Type" "blog")}}
+{{ $pages := append $builds $software}}
+{{ $pages := append $pages $blog}}
+{{ $paginator := .Paginate (sort $pages "Date" "desc") $postsPerPage }}
+
+<div class="site-section bg-light" id="blog-section">
+  <main class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h2 class="section-title mb-3">Blog Posts</h2>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      {{ range $paginator.Pages }}
+      <article class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+        <header class="h-entry">
+          <a class="text-gray" href="{{ .Permalink }}">
+          <div class="text-center"><img src="{{ .Params.image | absURL }}" alt="title image" class="img-fluid rounded" style="max-height: 186px" /></div>
+          <h2>{{ .Params.title }}</h2>
+          <div class="meta mb-4">
+            {{ with .Params.author | default .Site.Params.author }}
+            <i class="icon-person"></i> @{{ . }}
+            {{ end }}
+            <span class="mx-2">&bullet;</span>
+            {{ with .Params.date }}
+            <i class="icon-calendar"></i> {{ dateFormat "Jan 02, 2006" . }}
+            {{ end }}
+          <span class="mx-2">&bullet;</span>{{ with .Params.categories }}{{ delimit . ", "}}{{ end }}
+          </div>
+          </a>
+        </header>
+        <section>
+          {{ .Params.description }}
+        </section>
+      </article>
+      {{ end }}
+    </div>
+    <div class="row text-center">
+      <nav class="pagination" role="navigation">
+        {{if $paginator.HasPrev}}
+        <a class="text-gray" href="{{ $paginator.Prev.URL }}#blog-section">&larr; <span class="hide">Next Posts</span></a>
+        {{end}}
+        {{ if gt $paginator.TotalPages 1 }}
+        <span class="page-number"><span class="hide">Page {{ $paginator.PageNumber }} of
+            {{$paginator.TotalPages}}</span>&nbsp;</span>
+        {{if $paginator.HasNext}}
+        <a class="text-gray" href="{{ $paginator.Next.URL }}#blog-section"><span class="hide">Previous Posts</span> &rarr;</a>
+        {{end}}
+        {{ end }}
+      </nav>
+    </div>
+
+  </main>
+</div>

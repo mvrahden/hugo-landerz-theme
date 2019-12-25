@@ -1,0 +1,83 @@
+baseurl         = "/"
+theme           = "openclusters"
+languageCode    = "en-US"
+disqusShortname = ""
+#SectionPagesMenu = "main"
+canonifyurls    = true
+
+[params]
+  logo        = "images/top-logo.svg"
+  title       = "#openclusters"
+  subtitle    = "Affordable, <br/>self-governed & <br/>community-driven <br/>computer clusters"
+  copyright   = "Copyright © 2019 All rights reserved."
+
+  cover       = "images/server-stack.png"
+  description = "This page is a repository for makers and tinkerers. We share building plans and source code, to make and provision our very own computer clusters."
+  metaDescription = "This page is a repository for makers and tinkerers. We share building plans and source code, to make and provision our very own computer clusters."
+  customCSS = []
+  RSSLink = ""
+  showSubscribe = false
+  googleAnalytics = "UA-XXXXXX"
+  [params.mailChimp]
+    uuid = "54125xxxxxxxx"
+    lid = "71dxxxxxx"
+
+  twitterName = ""
+  fbName = ""
+  githubName = "openclusters"
+  githubRepo = "openclusters/openclusters"
+  linkedinName = "mvrahden"
+  mediumName = ""
+
+  orgName = "openclusters.org"
+  orgWebsite = "https://openclusters.org"
+  orgDescription = ""
+
+  #showSupport = true
+
+  author = "mvrahden"
+  authorAvatar = "img/ghost-icon.png"
+  authorLocation = "Lisbon, PT"
+  authorWebsite = "https://openclusters.org"
+  authorDescription = ""
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "caspertwo"
+
+[permalinks]
+  post = "/post/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Builds"
+  url = "/build-plans/"
+  weight = 99
+
+[[menu.main]]
+  name = "Provisionings"
+  url = "/provisionings/"
+  weight = 98
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 97
+
+[[menu.main]]
+  name = "Contact"
+  url = "#contact-section"
+  weight = 96
+
+[[menu.main]]
+  name = "Github"
+  url = "https://github.com/mvrahden/openclusters"
+  # logo reference
+  post = "images/logo-github-round.svg"
+  weight = 96
+  

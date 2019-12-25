@@ -1,0 +1,23 @@
+<div class="site-blocks-cover bg-light" style="overflow: hidden;">
+  <div class="container">
+    <div class="row align-items-center mt-5">
+      <div class="col-12">
+        <div class="text-right d-none d-lg-block">
+          <img src="{{ .Site.Params.Cover | absURL }}" alt="Image" class="img-fluid img-absolute" style="max-width: 60%;">
+        </div>
+        <div class="text-center d-block d-lg-none mt-5">
+          <img src="{{ .Site.Params.Cover | absURL }}" alt="Image" class="img-fluid img-absolute" style="max-width: 70%;">
+        </div>
+        <div class="row mb-4">
+          <div class="col-lg-7 mr-auto text-lg-left text-center">
+            <h1>{{ .Site.Params.Subtitle | safeHTML }}</h1>
+            <p class="mb-4">{{ .Site.Params.Description }}</p>
+            <div id="scroll-event-button">
+              <div class="btn btn-primary mr-2 mb-2">Get Started</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

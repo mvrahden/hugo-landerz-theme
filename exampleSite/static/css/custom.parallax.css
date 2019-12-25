@@ -1,0 +1,38 @@
+.parallax {
+  /* load image inline with background-image: url(); */
+  background-attachment: fixed;
+  background-position: left top;
+  background-repeat: no-repeat;
+  min-height: 100%; /* adapt to parent container height */
+  max-height: 100%;
+}
+
+@media screen
+  and (min-width: 40vh)
+  and (max-width: 55vh)
+  and (max-width: 991px)
+  and (orientation: portrait) {
+  .parallax { background-size: auto 90vh; }
+}
+@media screen
+  and (min-width: 55vh)
+  and (max-width: 65vh)
+  and (max-width: 991px)
+  and (orientation: portrait) {
+  .parallax { background-size: auto 90vh; }
+}
+@media screen
+  and (min-width: 65vh)
+  and (max-width: 991px)
+  and (orientation: portrait) {
+  .parallax { background-size: auto 90vh; }
+}
+@media screen
+  and (min-width: 991px)
+  and (orientation: portrait) {
+  .parallax { background-size: auto 90vh; }
+}
+@media screen
+  and (orientation: landscape) {
+  .parallax { background-size: cover; }
+}

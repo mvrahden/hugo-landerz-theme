@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" viewBox="929 110 321.95398 321.95398" width="321.95398" height="321.95398">
+  <defs/>
+  <g id="Page" fill="none" stroke="none" stroke-opacity="1" fill-opacity="1" stroke-dasharray="none">
+    <title>Page</title>
+    <g id="Page: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_21">
+        <path d="M 929 110 L 929 431.954 L 1100.4601 431.954 L 1100.4601 307.58987 L 1058.546 307.58987 L 1058.546 256.821 L 1100.4601 256.821 L 1100.4601 214.18415 C 1100.4601 183.1756 1125.5973 158.03842 1156.6058 158.03842 L 1200.4239 158.03842 L 1200.4239 203.69113 L 1169.0699 203.69113 C 1159.2169 203.69113 1151.229 211.67905 1151.229 221.53201 L 1151.229 256.8217 L 1199.6362 256.8217 L 1192.946 307.59057 L 1151.229 307.59057 L 1151.229 431.954 L 1250.954 431.954 L 1250.954 110 Z" fill="#666"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,34 @@
+{{ partial "footer-contact.html" . }}
+<footer class="footer py-5 border-top text-center bg-light">
+  <div class="container">
+    <div class="row mb-5">
+      <nav class="col-12">
+        <p class="mb-0">
+        {{with .Site.Params.githubRepo}}<a href="https://github.com/{{.}}" target="_blank" rel="noopener noreferrer" class="p-3"><img class="shadow social-link-svg" height="50" width="50" src="{{ "images/logo-github-plain.svg" | absURL }}" /></a>{{end}}
+        {{with .Site.Params.linkedinName}}<a href="https://www.linkedin.com/in/{{.}}" target="_blank" rel="noopener noreferrer" class="p-3"><img class="shadow social-link-svg" height="50" width="50" src="{{ "images/logo-linkedin-plain.svg" | absURL }}" /></a>{{end}}
+        {{with .Site.Params.facebookUrl}}<a href="{{.}}" target="_blank" rel="noopener noreferrer" class="p-3"><img class="shadow social-link-svg" height="50" width="50" src="{{ "images/logo-facebook-plain.svg" | absURL }}" /></a>{{end}}
+        {{with .Site.Params.thingiverseUrl}}<a href="{{.}}" target="_blank" rel="noopener noreferrer" class="p-3"><img class="shadow social-link-svg" height="50" width="50" src="{{ "images/logo-thingiverse-plain.svg" | absURL }}" /></a>{{end}}
+        {{with .Site.Params.patreonName}}<a href="https://patreon.com/{{.}}" target="_blank" rel="noopener noreferrer" class="p-3"><img class="shadow social-link-svg" height="50" width="50" src="{{ "images/logo-patreon-plain.svg" | absURL }}" /></a>{{end}}
+        </p>
+      </nav>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <section class="copyright mb-0">
+          <a href="/">{{.Site.Params.orgName}}</a><br />
+          {{.Site.Params.copyright}}
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="mb-0" style="color: gray; font-size: 12px;">
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          Design base by <a href="https://colorlib.com" target="_blank" rel="noopener noreferrer"
+            style="color: gray;">Colorlib</a>.
+          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
