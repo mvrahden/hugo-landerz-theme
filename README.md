@@ -10,9 +10,16 @@
 ## Installation
 
 Inside the folder of your Hugo site run:
+```shell
+    $ git submodule add https://github.com/mvrahden/hugo-landerz-theme.git themes/landerz
+```
 
+or
+
+```shell
     $ cd themes
     $ git clone https://github.com/mvrahden/hugo-landerz-theme.git landerz
+```
 
 For more information read the official [setup guide](//gohugo.io/overview/installing/) of Hugo.
 

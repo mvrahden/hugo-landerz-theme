@@ -1,5 +1,5 @@
 baseurl         = "/"
-theme           = "openclusters"
+theme           = "landerz"
 languageCode    = "en-US"
 disqusShortname = ""
 #SectionPagesMenu = "main"
